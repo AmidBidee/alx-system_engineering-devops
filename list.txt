@@ -1,0 +1,11 @@
+total 36
+drwxrwxr-x  8 krummitz krummitz 4096 Jun 15 07:42 .
+drwxr-xr-x 32 krummitz krummitz 4096 Jun 15 07:42 ..
+drwxrwxr-x  8 krummitz krummitz 4096 Jun 15 07:23 .git
+drwxrwxr-x  2 krummitz krummitz 4096 Jun 11 21:37 0x00-shell_basics
+drwxrwxr-x  2 krummitz krummitz 4096 Jun 11 17:49 0x01-shell_permissions
+drwxrwxr-x  2 krummitz krummitz 4096 Jun 15 07:42 0x02-shell_redirections
+-rw-rw-r--  1 krummitz krummitz   40 Jun 10 18:22 README.md
+-rw-rw-r--  1 krummitz krummitz    0 Jun 15 07:42 list.txt
+drwxrwxr-x  2 krummitz krummitz 4096 Jun 15 03:39 s.js
+drwxrwxr-x  2 krummitz krummitz 4096 Jun 15 03:39 s.sh
