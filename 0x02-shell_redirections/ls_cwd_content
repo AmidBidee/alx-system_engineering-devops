@@ -1,0 +1,15 @@
+total 48
+drwxrwxr-x 2 krummitz krummitz 4096 Jun 15 07:50 .
+drwxrwxr-x 8 krummitz krummitz 4096 Jun 15 07:46 ..
+-rwxrwxrwx 1 krummitz krummitz   33 Jun 15 07:27 0-hello_world
+-rwxrwxrwx 1 krummitz krummitz   36 Jun 15 07:28 1-confused_smiley
+-rwxrwxrwx 1 krummitz krummitz   28 Jun 15 07:33 2-hellofile
+-rwxrwxrwx 1 krummitz krummitz   28 Jun 15 07:29 20-hiago
+-rwxrwxrwx 1 krummitz krummitz   16 Jun 15 07:31 21-reverse
+-rwxrwxrwx 1 krummitz krummitz   45 Jun 15 07:37 3-twofiles
+-rwxrwxrwx 1 krummitz krummitz   35 Jun 15 07:39 4-lastlines
+-rwxrwxrwx 1 krummitz krummitz   35 Jun 15 07:40 5-firstlines
+-rwxrwxrwx 1 krummitz krummitz   36 Jun 15 07:48 6-third_line
+-rwxrwxrwx 1 krummitz krummitz   36 Jun 15 07:50 8-cwd_state
+-rw-rw-r-- 1 krummitz krummitz    0 Jun 15 07:50 ls_cwd_content
+-rw-rw-r-- 1 krummitz krummitz    0 Jun 15 07:50 ls_cwd_content
