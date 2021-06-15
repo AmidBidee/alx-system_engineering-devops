@@ -13,3 +13,31 @@ t5
 fish
 Cat
 
+
+
+==> ./w.txt <==
+bin
+4
+t5
+5g
+4
+fish
+Cat
+
+
+
+bin
+4
+t5
+5g
+4
+fish
+Cat
+
+
+
+
+
+
+
+
