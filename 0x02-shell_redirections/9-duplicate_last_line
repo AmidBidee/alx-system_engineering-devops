@@ -1,3 +1,3 @@
 
 #!/bin/bash
-tail -1 w.txt >> w.txt
+tail -1 iacta >> iacta
