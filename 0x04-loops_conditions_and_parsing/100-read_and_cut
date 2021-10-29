@@ -1,2 +1,5 @@
-#!/bin/bash
-while IFS=: read user shadow uid guid geco home sh; do if [[ $uid ]]; then echo $user $uid $home; fi; done < /etc/passwd
+#!/usr/bin/env bash
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7; 
+do 
+	echo "$f1" "$f3" "$f6"
+done < /etc/passwd
