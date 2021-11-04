@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# takes user argument as IP and
+# pings the it with count=5
+if [[ -n $1 ]]
+then
+	ping -c 5 "$1"
+else
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+fi
