@@ -3,6 +3,11 @@
 # Nginx should be listening on port 80
 # When sent a GET request at root, return a page that contains at least
 # one string "Hello World"
+
+# install nginx
 apt-get -y install nginx
-service nginx start
+
+# allow only http on port 80
+ufw allow 'Nginx HTTP'
 echo "Hello World!" | tee /usr/share/nginx/html/index.html
+ervice nginx restart
