@@ -8,6 +8,22 @@
 apt-get -y install nginx
 # allow only http on port 80
 ufw allow 'Nginx HTTP'
-echo "Hello World!" | tee /usr/share/nginx/html/index.html
+
+# enable nginx
 service nginx enable
 service nginx start
+
+# file config
+mkdir -p /var/www/krummitz.com/html
+touch /var/www/krummitz.com/html/index.html
+echo "<h1>Hello World!</h1>" > /var/www/krummitz.com/html/index.html
+
+# create sever block
+touch /etc/nginx/sites-available/krummitz.com
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/krummitz.com
+
+# enable
+ln -s /etc/nginx/sites-available/krummitz.com /etc/nginx/sites-enabled/
+
+# restart
+service nginx restart
