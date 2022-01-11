@@ -13,6 +13,7 @@ sudo ufw allow 'Nginx HTTP'
 sudo service nginx start
 # file config
 sudo mkdir -p /var/www/html
+chown -R $USER:$USER /var/www/html
 sudo chmod -R 775 /var/www
 sudo echo "Hello World!" > /var/www/html/index.html
 # restart
