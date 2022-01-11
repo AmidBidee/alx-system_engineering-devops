@@ -10,11 +10,10 @@ apt -y install nginx
 # allow only http on port 80
 sudo ufw allow 'Nginx HTTP'
 # enable nginx
-service nginx enable
 service nginx start
 # file config
 sudo mkdir -p /var/www/html
 sudo chmod -R 775 /var/www
-echo "Hello World!" > /var/www/html/index.html
+echo "<h1>Hello World!</h1>" > /var/www/html/index.html
 # restart
 service nginx restart
