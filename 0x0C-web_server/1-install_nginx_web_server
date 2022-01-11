@@ -5,25 +5,17 @@
 # one string "Hello World"
 
 # install nginx
-apt-get -y install nginx
+sudo apt update
+sudo apt -y install nginx
 # allow only http on port 80
-ufw allow 'Nginx HTTP'
-
+sudo ufw allow 'Nginx HTTP'
 # enable nginx
 service nginx enable
 service nginx start
-
 # file config
-mkdir -p /var/www/krummitz.com/html
-touch /var/www/krummitz.com/html/index.html
-echo "<h1>Hello World!</h1>" > /var/www/krummitz.com/html/index.html
-
-# create sever block
-touch /etc/nginx/sites-available/krummitz.com
-cp /etc/nginx/sites-available/default /etc/nginx/sites-available/krummitz.com
-
-# enable
-ln -s /etc/nginx/sites-available/krummitz.com /etc/nginx/sites-enabled/
-
+sudo mkdir -p /var/www/html
+sudo chown -R $USER:$USER /var/www/html
+sudo chmod -R 775 /var/www
+echo "<h1>Hello World!</h1>" > /var/www/html/index.html
 # restart
 service nginx restart
