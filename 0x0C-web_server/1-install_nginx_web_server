@@ -10,7 +10,7 @@ apt -y install nginx
 # start nginx
 service nginx start
 # allow only http on port 80
-sudo ufw allow 'Nginx HTTP'
+ufw allow 'Nginx HTTP'
 # file config
 mkdir -p /var/www/html
 chmod -R 775 /var/www
