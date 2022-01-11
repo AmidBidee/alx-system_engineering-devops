@@ -6,8 +6,7 @@
 
 # install nginx
 apt-get -y install nginx
-
 # allow only http on port 80
 ufw allow 'Nginx HTTP'
 echo "Hello World!" | tee /usr/share/nginx/html/index.html
-ervice nginx restart
+service nginx restart
