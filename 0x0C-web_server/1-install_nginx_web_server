@@ -5,14 +5,21 @@
 # one string "Hello World"
 
 # install nginx
-sudo apt update
-sudo apt -y install nginx
+apt update
+apt -y install nginx
 # allow only http on port 80
 sudo ufw allow 'Nginx HTTP'
 # file config
 sudo mkdir -p /var/www/html
 sudo chmod -R 775 /var/www
-sudo echo "Hello World!" > /var/www/html/index.html
-# restart
-service nginx start
-service nginx restart
+echo "Hello World!" > /var/www/html/index.html
+# start or restart if running
+t=$(pgrep nginx | wc -l)
+if [[ $t -eq 0 ]]
+then
+	echo 'starting'
+	service nginx start
+else
+	echo 'restarting'
+	service nginx restart
+fi
