@@ -14,6 +14,6 @@ service nginx start
 # file config
 sudo mkdir -p /var/www/html
 sudo chmod -R 775 /var/www
-echo "Hello World!" > /var/www/html/index.html
+sudo echo "Hello World!" > /var/www/html/index.html
 # restart
 service nginx restart
