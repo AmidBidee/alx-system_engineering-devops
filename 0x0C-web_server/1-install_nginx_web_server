@@ -15,7 +15,7 @@ sudo chmod -R 775 /var/www
 echo "Hello World!" > /var/www/html/index.html
 # start or restart if running
 t=$(pgrep nginx | wc -l)
-if [[ $t -eq 0 ]]
+if [[ $t -le 0 ]]
 then
 	echo 'starting'
 	service nginx start

@@ -1,5 +1,5 @@
 t=$(pgrep nginx | wc -l)
-if [[ $t -eq 0 ]]
+if [[ $t -le 0 ]]
 then
 	echo 'starting'
 	sudo service nginx start
