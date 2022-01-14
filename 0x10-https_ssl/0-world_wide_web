@@ -8,12 +8,13 @@ execDig () {
     dig "$subdomain.$domain" | grep -A1 'ANSWER SECTION:' | tail -1 | awk -v s="$subdomain" 'BEGIN { FS = " " } ; { print "The subdomain " s " is a " $4 " record and points to " $5 }'
 }
 
-subdomains=( "wwww", "lb-01", "web-01", "web-02" )
+#subdomains=( "wwww", "lb-01", "web-01", "web-02" )
 
 if [ $# -eq 1 ]
 then
     url="$1"
-    for s in "${subdomains[@]}"
+    execDig "www" "$url"
+    for s in "wwww" "lb-01" "web-01" "web-02"
     do
         execDig "$s" "$url"
     done
