@@ -1,0 +1,12 @@
+#!/bin/bash
+# block all incoming TCP ports except
+# SSH HTTPS SSL HTTP
+
+# verify ufw is installed
+apt-get -y install ufw
+
+# block all incoming ports
+ufw default deny incoming
+
+# allow following ports
+ufw allow OpenSSH ; ufw allow 80 ; ufw allow 443
