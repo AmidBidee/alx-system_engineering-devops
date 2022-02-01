@@ -20,7 +20,7 @@ if __name__ == "__main__":
     for task in r:
         if (task.get("userId") == int(eid)):
             temp = {}
-            temp['title'] = task.get("title") 
+            temp['task'] = task.get("title") 
             temp['completed'] = task.get("completed")
             temp['username'] = username
             tasks.append(temp)
