@@ -20,13 +20,12 @@ if __name__ == "__main__":
     for task in r:
         if (task.get("userId") == int(eid)):
             temp = {}
-            temp['task'] = task.get("title") 
+            temp['task'] = task.get("title")
             temp['completed'] = task.get("completed")
             temp['username'] = username
             tasks.append(temp)
 
     all_user_tasks['{}'.format(eid)] = tasks
-        
 
     with open('{}.json'.format(eid), 'w+') as jsonfile:
-         jsonfile.write(json.dumps(all_user_tasks))
+        jsonfile.write(json.dumps(all_user_tasks))
