@@ -2,8 +2,10 @@
 """
 Extend the python script from exercise 0 to export data in CSV format.
 Record all tasks that are owned by the employee.
-Format must be: "USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"
-File name must be: USER_ID.csv
+{ "USER_ID": [{"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, 
+"username": "USERNAME"}, {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, 
+"username": "USERNAME"}, ... ]}
+File name must be: USER_ID.json
 """
 import json
 import requests
