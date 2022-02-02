@@ -26,12 +26,12 @@ if __name__ == "__main__":
         for task in tasks:
             if (task.get("userId") == eid and task.get("completed")):
                 temp = {}
+                temp["username"] = username
                 temp["task"] = task.get("title")
                 temp["completed"] = task.get("completed")
-                temp["username"] = username
                 all_tasks.append(temp)
 
         all_user_tasks[eid] = all_tasks
-        
+
     with open('todo_all_employees.json', 'w+') as jsonfile:
         jsonfile.write(json.dumps(all_user_tasks))
