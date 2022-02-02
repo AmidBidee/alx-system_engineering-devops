@@ -31,6 +31,7 @@ if __name__ == "__main__":
                 temp["username"] = username
                 all_tasks.append(temp)
 
-    all_user_tasks[eid] = all_tasks
+        all_user_tasks[eid] = all_tasks
+        
     with open('todo_all_employees.json', 'w+') as jsonfile:
         jsonfile.write(json.dumps(all_user_tasks))
