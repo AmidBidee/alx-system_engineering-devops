@@ -2,8 +2,8 @@
 # that would be all regarding comments for now
 
 Host *
-PasswordAuthentication no
-IdentitiFile ~/.ssh/shcool
+PasswordAuthentication yes
+IdentitiFile ~/.ssh/id_rsa
 SendEnv LANG LC_*
 HashKnownHosts yes
 GSSAPIAuthentication yes

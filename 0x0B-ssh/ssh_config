@@ -1,9 +1,0 @@
-# krummitz ssh config file
-# that would be all regarding comments for now
-
-Host *
-PasswordAuthentication no
-IdentitiFile ~/.ssh/shcool
-SendEnv LANG LC_*
-HashKnownHosts yes
-GSSAPIAuthentication yes
